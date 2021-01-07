@@ -14,20 +14,24 @@ object AA {
 
 //主函数入口
 fun main(args: Array<String>) {
-    //    const val x = 10 //编译错误
+//        const val x = 10 //编译错误
 
     //省略;  当一行多个语句的时候不可以省略
-    val m = 12  //默认是Int
-    val n = "hello"
+    var m = 12  //默认是Int
+
+    val n = "hello"  //相当java中的final变量
 
     //  n = "world"  编译期报错
 
     var t: Long = 20 //显式声明变量类型   注意只有大写的L
+
+    t = m.toLong()
+
     t = 30L
 
     var b = 2.5  //默认是double
 
-    val h: Float = 4.6f
+    val h: Float = 4.6F
 
     val k: Char = 's'
 
@@ -46,7 +50,7 @@ fun main(args: Array<String>) {
     println(p1.name)
     println(p1.age)
 
-    //p1 = Person("Tom", 20) //编译错误
+//    p1 = Person("Tom", 20) //编译错误
 
 }
 

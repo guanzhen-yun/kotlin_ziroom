@@ -39,7 +39,7 @@ fun main(args: Array<String>) {
     //when语句  类型swich case
     val chineseScore = 90
     when (chineseScore) {
-        in 10..20 -> println("差的没边啦")
+        in 10..20 -> println("差的没边啦")  //10..20
         30 -> println("真差")
         60 -> println("刚刚及格啊")
         80, 90 -> println("真优秀啊")
@@ -63,7 +63,7 @@ fun main(args: Array<String>) {
     println()
 
     //不包括右
-    for (i in 1 until 5) {
+    for (i in 1 until 5 step 2) {
         print(i.toString() + " ,")
     }
 
@@ -99,7 +99,7 @@ fun main(args: Array<String>) {
         for (j in 1..5) {
             if (j + i == 5) {
                 print(j)
-                break@label
+                continue@label
             }
         }
     }
@@ -113,15 +113,15 @@ fun main(args: Array<String>) {
     //throw 特殊的表达式 类型没有返回值 相当于java里面的void
 
     val v = try {
+        1/0
         "sss"
     } catch (e: Exception) {
-
+        "yyy"
     }
 
     println(v)
 
     val w = throw Exception("xxxxx")
-//    println(w)  编译错误
 }
 
 fun max(a: Int, b: Int): Int {
