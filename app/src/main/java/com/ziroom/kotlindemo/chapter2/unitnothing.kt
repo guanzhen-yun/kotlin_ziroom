@@ -9,7 +9,7 @@ fun main(args: Array<String>) {
     val m = add(3, 4)
     println("m=$m")  //kotlin.Unit
 
-//    val date = readDate()  //没有返回值 date不可用
+    val date = readDate()  //没有返回值 date不可用
 
     println(getValue(1))
     println(getValue("hello"))

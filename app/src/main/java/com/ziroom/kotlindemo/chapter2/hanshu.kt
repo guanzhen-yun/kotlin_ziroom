@@ -5,7 +5,7 @@ package com.ziroom.kotlindemo.chapter2
  */
 fun main(args: Array<String>) {
     //默认参数
-    val coffee1 = makeCoffee("拿铁")
+    val coffee1 = makeCoffee(type = "拿铁")
     val coffee2 = makeCoffee()
 
     println(coffee1)
@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
 
     //具名参数  用命名参数调用函数--在调用函数时，一旦其中一个参数采用了命名参数形式传递，那么其后的所有参数都必须采用命名参数形式传递，除非它是最后一个参数。
     printArea(320.0, 480.0)
-    printArea(width = 320.0, height = 480.0)
+    printArea(height = 320.0, width = 480.0)
     printArea(320.0, height = 480.0)
     //    printArea(width = 320.0, 480.0) //编译错误
 
