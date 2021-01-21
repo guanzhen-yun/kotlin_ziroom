@@ -4,7 +4,7 @@ package com.ziroom.kotlindemo.chapter3
  * 单例类
  */
 object AA {
-    val m = "sss"
+    const val m = "sss"
     fun getName(): String {
         return "名字"
     }

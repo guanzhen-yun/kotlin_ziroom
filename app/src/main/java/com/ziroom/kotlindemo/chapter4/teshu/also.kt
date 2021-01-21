@@ -5,6 +5,7 @@ package com.ziroom.kotlindemo.chapter4.teshu
  */
 fun main(args: Array<String>) {
     testAlsoFun()
+    val m = "10"
 }
 
 fun testAlsoFun() {

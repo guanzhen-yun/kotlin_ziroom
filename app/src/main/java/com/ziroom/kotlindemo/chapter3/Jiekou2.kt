@@ -1,9 +1,5 @@
 package com.ziroom.kotlindemo.chapter3
 
-/**
- * 接口
- */
-interface Jiekou {
+interface Jiekou2 {
     fun getName(): String
-    val score: Float
 }

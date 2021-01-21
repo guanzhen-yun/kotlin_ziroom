@@ -6,7 +6,7 @@ package com.ziroom.kotlindemo.chapter2
 class GouzaoClass() { //一级构造
     //lateinit 延迟初始化  不能修饰基本数据类型
     lateinit var name: String
-    var age = 0
+    var age = 0 //必须初始化
 
     //二级构造函数
     constructor(name: String) : this() { //声明调用一级构造
