@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.Gravity
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.widget.addTextChangedListener
 import org.jetbrains.anko.*
 import org.jetbrains.anko.sdk25.coroutines.onClick
 import org.jetbrains.anko.sdk25.coroutines.onLongClick
@@ -15,6 +17,26 @@ class AnkoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         // AnkoComponent和Activity相互绑定
         MainUI().setContentView(this@AnkoActivity)
+
+        val et = EditText(this)
+        et.setOnClickListener {
+
+        }
+
+        et.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                TODO("Not yet implemented")
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                TODO("Not yet implemented")
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+                TODO("Not yet implemented")
+            }
+
+        })
     }
 }
 
@@ -55,6 +77,7 @@ class MainUI : AnkoComponent<AnkoActivity> {
                     // anko封装的intent携带值跳转
 //                    startActivity<ListActivity>("aulton" to "aulton")
                 }
+
                 // 长按事件
                 onLongClick {
                     toast("Long Click")

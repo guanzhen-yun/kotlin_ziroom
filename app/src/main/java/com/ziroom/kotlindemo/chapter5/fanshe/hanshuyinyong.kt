@@ -16,6 +16,8 @@ fun main(args: Array<String>) {
 //属性引用
 fun testReflectProperty() {
     println(::one.get())
+    println(one)
+    one = 2
     ::one.set(2)
     println(one)
 }

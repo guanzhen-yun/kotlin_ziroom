@@ -1,4 +1,4 @@
-package com.ziroom.kotlindemo.zy.zuoye
+package com.ziroom.kotlindemo.zy1.zuoye
 
 /**
  * list转换 list(1,3,5,7,9)  输出 list(19, 15, 11, 7, 3)

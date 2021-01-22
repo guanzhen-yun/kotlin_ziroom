@@ -9,7 +9,7 @@ fun demo(strs: INext<String>) {
     val objects: INext<Any> = strs  //因为String : Any
 }
 
-interface IGet<in T> {//逆变
+interface IGet<in T> {//逆变 ？ super T
     fun getT()
 }
 

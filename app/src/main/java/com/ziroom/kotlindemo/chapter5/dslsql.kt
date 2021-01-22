@@ -4,7 +4,7 @@ data class Student(var name: String, var sex: String, var score: Int)
 
 //sql风格的集合类DSL
 fun main(args: Array<String>) {
-    var students = listOf(
+    val students = listOf(
         Student("jack", "M", 90),
         Student("alice", "F", 70),
         Student("bob", "M", 60),

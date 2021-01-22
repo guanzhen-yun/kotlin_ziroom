@@ -25,7 +25,7 @@ annotation class Run
 //使用注解
 @Run
 class SwordTest {
-    @TestCase(id = "1")
+    @TestCase(id = "10")
     fun testCase(testId: String) {
         println("Run SwordTest ID = ${testId}")
     }
@@ -41,7 +41,7 @@ fun testAnnoProcessing() {
             if(it is TestCase) {
                 val id = it.id
                 println(id) //doSomeThing
-                f.call(sword, id)
+                f.call(sword, id) //方法调用
             }
         }
     }

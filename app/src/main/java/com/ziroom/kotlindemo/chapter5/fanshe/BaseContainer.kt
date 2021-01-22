@@ -32,7 +32,7 @@ fun main(args: Array<String>) {
     println(kTypeParameter.isReified) //reified 在运行时完全可用  泛型类型参数通常在编译期间被擦除
     println(kTypeParameter.name) //T
     println(kTypeParameter.upperBounds) //上界 kotlin.Comparable
-    println(kTypeParameter.variance) //INVARIANT  型变
+    println(kTypeParameter.variance) //INVARIANT  型变 in  out
 
     val constructors = kClass.constructors//构造函数
     for (KFunction in constructors) {

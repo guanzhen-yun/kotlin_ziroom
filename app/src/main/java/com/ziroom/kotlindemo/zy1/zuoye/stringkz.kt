@@ -1,4 +1,4 @@
-package com.ziroom.kotlindemo.zy.zuoye
+package com.ziroom.kotlindemo.zy1.zuoye
 
 /**
  * 给String扩展一个去除字符a b c 的方法   比如 3a67b -> 367
