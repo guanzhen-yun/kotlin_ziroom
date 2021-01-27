@@ -15,7 +15,6 @@ object AA {
 //主函数入口
 fun main(args: Array<String>) {
 //        const val x = 10 //编译错误
-
     //省略;  当一行多个语句的时候不可以省略
     var m = 12  //默认是Int
 
@@ -52,6 +51,17 @@ fun main(args: Array<String>) {
 
 //    p1 = Person("Tom", 20) //编译错误
 
+    val a1 = A()
+    println("m=${a1.m}") //每次都不一样
+    println("m=${a1.m}")
+}
+
+open class A {
+    //只读变量 可能每次读取的值不一样
+    val m: Int
+    get() {
+        return (Math.random() * 100).toInt()
+    }
 }
 
 

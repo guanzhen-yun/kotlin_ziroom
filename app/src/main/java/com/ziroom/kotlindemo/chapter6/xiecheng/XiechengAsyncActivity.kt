@@ -28,6 +28,7 @@ class XiechengAsyncActivity : AppCompatActivity() {
             val result = result1.await() + result2.await()
             Log.e("XiechengAsyncActivity", "result = $result")
         }
+
     }
 
     private suspend fun getResult1(): Int {

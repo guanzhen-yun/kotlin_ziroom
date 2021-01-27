@@ -4,8 +4,11 @@ package com.ziroom.kotlindemo.chapter3
 fun main(args: Array<String>) {
     //映射函数
     val list = listOf(1, 2, 3, 4, 5)
+    val list3 = list.asSequence().map { it * it} //asSequence 懒序列
+    println(list3) //TransformingSequence
+    list.flatMap { 0 until it }.joinToString().let(::println) //[0, 0, 1, 0, 1, 2, 0, 1, 2, 3, 0, 1, 2, 3, 4]
     val list2 = list.map { it * it }
-    println(list2)  //平方
+    println(list2)  //平方 [1, 4, 9, 16, 25]
 
     val strList = listOf("a", "b", "c")
     val strList2 = strList.map { listOf(it + 1, it + 2, it + 3, it + 4) }  //嵌套
