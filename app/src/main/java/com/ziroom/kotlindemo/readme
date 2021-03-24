@@ -2,6 +2,10 @@
 Type Info  Alt + P  变量类型
 Kotlin ByteCode Alt + I  kotlin字节码
 
+alt + shift + Z //try catch之类的提示
+
+alt + shift + R 参数重命名
+
 //region +折叠
 
 fun getName() {
