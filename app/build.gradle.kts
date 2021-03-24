@@ -1,11 +1,25 @@
 //apply plugin: 'com.android.application'
 //apply plugin: 'kotlin-android'
 //apply plugin: 'kotlin-android-extensions'
-
 plugins {
     id("com.android.application")
     kotlin("android")
     kotlin("android.extensions")
+
+    //id'org.jetbrains.kotlin.plugin.noarg' version'1.3.50'
+    kotlin("plugin.noarg") version("1.3.60")
+    kotlin("plugin.allopen") version("1.3.60")
+    kotlin("plugin.serialization") version("1.3.60")
+}
+
+noArg {
+    invokeInitializers = true
+    //annotations "com.ziroom.kotlindemo.chapter3.PoKo"
+    annotations("com.ziroom.kotlindemo.chapter3.PoKo")
+}
+
+allOpen {
+    annotations("com.ziroom.kotlindemo.chapter3.PoKo")
 }
 
 android {
@@ -74,7 +88,7 @@ dependencies {
 //    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
 //    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.3.61")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.21")
     implementation("androidx.core:core-ktx:1.3.2")
     implementation("androidx.appcompat:appcompat:1.2.0")
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")
@@ -114,4 +128,11 @@ dependencies {
     implementation("com.squareup.retrofit2:retrofit:2.6.2")
     implementation("com.squareup.retrofit2:converter-gson:2.6.2")
     implementation("com.google.code.gson:gson:2.8.6")
+
+    //Moshi
+//    implementation 'com.squareup.moshi:moshi:1.8.0'//这个包是必须要导入的
+//    kapt 'com.squareup.moshi:moshi-kotlin-codegen:1.8.0'//需要在bean对象上使用注解@JsonClass(generateAdapter=true)
+    implementation("com.squareup.moshi:moshi:1.8.0")
+    //ks
+    implementation ("org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.13.0")
 }

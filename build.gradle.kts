@@ -14,6 +14,7 @@ buildscript {
         classpath ("com.android.tools.build:gradle:4.0.0")
         classpath(kotlin("gradle-plugin", kotlin_version))
         classpath ("org.jetbrains.kotlin:kotlin-reflect:$kotlin_version")
+//        classpath ("org.jetbrains.kotlin:kotlin-serialization:$kotlin_version")
     }
 }
 
