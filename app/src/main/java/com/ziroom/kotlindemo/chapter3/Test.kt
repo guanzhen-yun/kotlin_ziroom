@@ -2,9 +2,6 @@ package com.ziroom.kotlindemo.chapter3
 
 
 fun main(args: Array<String>) {
-    val b = BB(3, 4)
-    println(b.m)
-
     val jie = Jie()
     println(jie.getName())
 
