@@ -1,4 +1,4 @@
-package com.ziroom.kotlindemo.chapter7.anli.gson
+package com.ziroom.kotlindemo.chapter7.anli_xuliehua.gson
 
 import com.google.gson.Gson
 

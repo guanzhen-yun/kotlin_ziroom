@@ -1,4 +1,4 @@
-package com.ziroom.kotlindemo.chapter7.anli.moshi
+package com.ziroom.kotlindemo.chapter7.anli_xuliehua.moshi
 
 import com.squareup.moshi.Moshi
 

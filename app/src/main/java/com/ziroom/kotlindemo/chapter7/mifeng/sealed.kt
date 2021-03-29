@@ -1,6 +1,6 @@
 package com.ziroom.kotlindemo.chapter7.mifeng
 
-//密封类
+//密封类 印章类
 //1.抽象
 //2.密封
 
