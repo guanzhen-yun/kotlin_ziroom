@@ -1,4 +1,4 @@
-package com.ziroom.kotlindemo.chapter5
+package com.ziroom.kotlindemo.chapter5.dsl
 
 import android.graphics.Color
 import android.os.Bundle
@@ -7,7 +7,6 @@ import android.text.TextWatcher
 import android.view.Gravity
 import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.widget.addTextChangedListener
 import org.jetbrains.anko.*
 import org.jetbrains.anko.sdk25.coroutines.onClick
 import org.jetbrains.anko.sdk25.coroutines.onLongClick

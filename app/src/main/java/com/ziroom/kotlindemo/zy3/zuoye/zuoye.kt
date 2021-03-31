@@ -1,6 +1,6 @@
 package com.ziroom.kotlindemo.zy3.zuoye
 
-import com.ziroom.kotlindemo.chapter5.where
+import com.ziroom.kotlindemo.chapter5.dsl.where
 //DSL 实现学生过滤
 fun main() {
     listOf(

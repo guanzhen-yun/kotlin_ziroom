@@ -17,7 +17,7 @@ annotation class TestCase(val id: String)
     AnnotationTarget.FUNCTION,
     AnnotationTarget.VALUE_PARAMETER
 )
-@Retention(AnnotationRetention.RUNTIME)
+@Retention(AnnotationRetention.RUNTIME)  //BINARY 编译期
 @Repeatable
 @MustBeDocumented
 annotation class Run

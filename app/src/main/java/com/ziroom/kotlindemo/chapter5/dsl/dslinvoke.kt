@@ -1,4 +1,4 @@
-package com.ziroom.kotlindemo.chapter5
+package com.ziroom.kotlindemo.chapter5.dsl
 //dsl invoke的一个例子
 fun main(args: Array<String>) {
     val hello = Hello()

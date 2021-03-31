@@ -1,4 +1,4 @@
-package com.ziroom.kotlindemo.chapter5
+package com.ziroom.kotlindemo.chapter5.dsl
 
 data class Student(var name: String, var sex: String, var score: Int)
 
